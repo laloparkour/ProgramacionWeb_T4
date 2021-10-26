@@ -1,0 +1,998 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBox {
+    display: none;
+}
+
+.container > .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 467px;
+    max-width: 499px;
+    height: 45px;
+}
+
+.container > .banner > .profileImage {
+    display: flex;
+    align-self: center;
+    min-width: 56px;
+    min-height: 32px;
+}
+
+.container > .banner > .profileImage > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.container > .banner > h2 {
+    width: 350px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.container > .banner > .topTweets {
+    width: 23px;
+}
+
+.container > .main {
+    width: 499px;
+    max-width: 499px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+}
+
+.container > .main > article {
+    width: 465px;
+    max-width: 499px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container > .main > article > .sidebar-left {
+    width: 48px;
+    max-width: 60px;
+    margin-right: 12px;
+}
+
+.container > .main > article > .sidebar-left > img {
+    width: 60px;
+    margin-left: -3px;
+}
+
+.container > .main > article > .post {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 405px;
+    max-width: 405px;
+    margin-bottom: 12px;
+}
+
+.container > .main > article > .post > .titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > .main > article > .post > .titulo > .left > .name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container > .main > article > .post > .titulo > .left > i {
+    font-size: 20px;
+    color:dodgerblue;
+}
+
+.container > .main > article > .post > .titulo > .left > .hash {
+    font-size: 15px;
+    color: slategrey;
+}
+
+.container > .main > article > .post > .titulo > i {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.container > .main > article > .post > .contenido > p {
+    width: 388px;
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 12px;
+    color: rgb(15, 20, 25);
+}
+
+.container > .main > article > .post > .imgPost {
+    max-width: 499px;
+}
+
+.container > .main > article > .post > .imgPost > img{
+    border-radius: 16px;
+    width: 390px;
+    height: 226px;
+}
+
+.container > .main > article > .post > .interacciones {
+    width: 390px;
+}
+
+.container > .main > article > .post > .interacciones > ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.container > .main > article > .post > .interacciones > ul > li {
+    min-height: 20px;
+}
+
+.container > .main > article > .post > .interacciones > ul > li > a {
+    display: flex;
+    color:slategray;
+}
+
+.container > .main > article > .post > .interacciones > ul > li > a > p {
+    padding: 0px 12px;
+    font-size: 13px;
+}
+
+.tweet {
+    display: flex;
+    position: fixed;
+    align-self: flex-end;
+    background-color: rgb(29, 155, 240);
+    border-radius: 50%;
+    bottom: 60px;
+    right: 36px;
+}
+
+.tweet > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    color: white;
+    font-size: 25px;
+}
+
+.menuBox {
+    position: fixed;
+    bottom: 0;
+    width: 497px;
+    height: 50px;
+    background-color: white;
+    border-top: 1px solid gainsboro;
+}
+
+.menuBox > ul {
+    width: 499px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.menuBox > ul > li > a > i{
+    color: black;
+    padding: 8px;
+    font-size: 24px;
+}
+
+/* Contenedores ocultos */
+.sidebar-right {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.twittear {
+    display: none;
+}
+
+.main-container > .right-bar {
+    display: none;
+}
+
+.main-container > .container > .qep {
+    display: none;
+}
+
+@media (min-width: 799px) and (max-height: 499px){
+    .tweet {
+        display: none;
+    }
+
+    .main-container > .right-bar {
+        display: none;
+    }
+
+    .twittear {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        background-color: rgb(29, 155, 240);
+        border-radius: 25px;
+        width: 162px;
+        height: 52px;
+        bottom: 60px;
+        right: 36px;
+    }
+    
+    .twittear > i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        color: white;
+        font-size: 25px;
+    }
+
+    .twittear > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1000px) and (max-height: 499px){
+
+    .container > .banner {
+        display: none;
+    }
+
+    .main-container > .right-bar {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 41px;
+        width: 988px;
+        min-width: 988px;
+        max-width: 988px;
+        left: 17px;
+    }
+
+    .container > .main {
+        display: flex;
+        flex-direction: column;
+        width: 598px;
+        max-width: 598px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-top: 0px;
+        border-left: 1px solid gainsboro;
+        border-right: 1px solid gainsboro;
+    }
+
+    .container > .main > article {
+        display: flex;
+        flex-direction: row;
+        padding-left: 16px;
+    }
+
+    .container > .sidebar-right {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        right: 20px;
+        width: 350px;
+        max-width: 380px;
+        margin-right: 5px;
+        margin-left: 20px;
+    }
+
+    .container > .sidebar-right > .wgo {
+        margin-top: 12px;
+    }
+
+    .container > .sidebar-right > .wgo, .follow {
+        display: flex;
+        width: 348px;
+        margin-bottom: 16px;
+        background: rgb(246, 246, 246);
+        border-radius: 16px;
+    }
+
+    
+    .container > .sidebar-right > .wgo > ul > li {
+        display: flex;
+        flex-direction: row;
+        width: 316px;
+        padding: 12px 16px;
+        padding-top: 12px;
+    }
+
+    .container > .sidebar-right > .follow > ul > li {
+        display: flex;
+        flex-direction: row;
+        width: 316px;
+        padding: 12px 16px;
+        padding-top: 12px;
+    }
+
+    .container > .sidebar-right > .wgo > ul > .tittle > h2 {
+        height: 24px;
+        font-size: 18px;
+    }
+
+    .container > .sidebar-right > .follow > ul > .tittle > h2 {
+        height: 24px;
+        font-size: 18px;
+    }
+
+    .container > .sidebar-right > .wgo > ul > li > .left {
+        width: 236px;
+        max-width: 248px;
+        margin-right: 12px;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > .left-ng {
+        width: 48px;
+        margin-right: 12px;
+        background-image: url(/assets/img/ng.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > .left-mrbeast {
+        width: 48px;
+        margin-right: 12px;
+        background-image: url(/assets/img/mrbeast.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > .left-chino {
+        width: 48px;
+        margin-right: 12px;
+        background-image: url(/assets/img/chino.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .container > .sidebar-right > .wgo > ul > li >.left > .category {
+        font-size: 12px;
+    }
+
+    .container > .sidebar-right > .wgo > ul > li >.left > p {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 4px;
+        margin-bottom: 2px;
+    }
+
+    .container > .sidebar-right > .wgo > ul > li > .left > span {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .container > .sidebar-right > .wgo > ul > li > .right {
+        width: 68px;
+        max-width: 68px;
+    }
+
+    .container > .sidebar-right > .wgo > ul > li > .right-bts {
+        width: 68px;
+        height: 68px;
+        background-image: url(/assets/img/bts.png);
+        background-size: cover;
+        background-position: center;        
+        border-radius: 16px;
+    }
+
+    .container > .sidebar-right > .wgo > ul > li > .right-oto {
+        width: 68px;
+        height: 68px;
+        background-image: url(/assets/img/oto.jpg);
+        background-size: cover;
+        background-position: center;        
+        border-radius: 16px;
+    }
+
+    .container > .sidebar-right > .wgo > ul > li > .ellipsis > i {
+        font-size: 16;
+        margin-left: 53px;
+    }
+
+    .container > .sidebar-right > .wgo > ul > li > a {
+        text-decoration: none;
+        color: rgb(29, 155, 240);
+        font-size: 14px;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > .center {
+        width: 161px;
+        height: 48px;
+        margin-right: 12px;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > .center > p {
+        display: flex;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 4px;
+        margin-bottom: 2px;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > .center > p > img {
+        width: 18px;
+        height: 18px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > .center > p > i {
+        font-size: 20px;
+        color:dodgerblue;
+        margin-left: 4px;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > .center > span {
+        font-size: 14px;
+        color: slategrey;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 76px;
+        height: 32px;
+        margin-left: 12px;
+        max-width: 88px;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > .right > button {
+        background-color: rgb(15, 20, 25);
+        width: 100%;
+        height: 100%;
+        color: rgb(235, 232, 232);
+        font-weight: bold;
+        border-radius: 15px;
+    }
+
+    .container > .sidebar-right > .follow > ul > li > a {
+        text-decoration: none;
+        color: rgb(29, 155, 240);
+        font-size: 14px;
+    }
+
+    .container > .sidebar-right > .footer > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    .container > .sidebar-right > .footer > ul > li > a {
+        font-size: 12px;
+        line-height: 16px;
+        color: rgb(83, 100, 113);
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding-right: 12px;
+    }
+
+    .container > .sidebar-right > .footer > ul > .ellipsis > a > i {
+        margin-left: 3px;
+    }
+
+    .topBox {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 1000px;
+        border-bottom: 1px solid gainsboro;
+    }
+
+    .topBox > .profileImage {
+        display: flex;
+        align-self: center;
+        
+        min-width: 56px;
+        min-height: 32px;
+    }
+        
+    .topBox > .profileImage > img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+    
+    .topBox > h2 {
+        width: 350px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    .topBox > .topTweets {
+        position: relative;
+        width: 23px;
+        right: -520px;
+    }
+
+    .menuBox {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 1005px;
+        height: 50px;
+        background-color: white;
+        border-top: 1px solid gainsboro;
+    }
+
+    .menuBox > ul {
+        width: 1004px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+    }
+
+}
+
+@media (min-width: 566px) and (min-height: 500px) {
+    
+    .topBox {
+        display: none;
+    }
+
+    .tweet {
+        display: none;
+    }
+
+    .menuBox {
+        display: none;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-container > .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -913px;
+        left: 0;
+        height: 502px;
+        max-height: 502px;
+    }
+
+    .main-container > .menu > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-container > .menu > ul > li > a > i {
+        padding: 12px;
+        font-size: 23px;
+        color: black;
+    }
+
+    .main-container > .menu > ul > li > a > .fa-twitter {
+        font-size: 32px;
+        color:dodgerblue;
+    }
+
+    .main-container > .menu > ul > .elipsis {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+
+    .main-container > .menu > ul > li > a > .fa-ellipsis-h{
+        font-size: 16px;
+    }
+
+    .main-container > .menu > ul > li > .tuit {
+        display: flex;
+        align-self: flex-end;
+        background-color: rgb(29, 155, 240);
+        border-radius: 50%;
+    }
+
+    .main-container > .menu > ul > li > .tuit > i {
+        color: white;
+        font-size: 25px;
+    }
+
+    .main-container > .menu > .perfilBox {
+        margin-top: 8px;
+        min-width: 56px;
+        min-height: 32px;
+    }
+    
+    .main-container > .menu > .perfilBox > img {
+        padding: 12px;
+        display: flex;
+        align-self: flex-end;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .main-container > .container > .main {
+        border-left: 1px solid gainsboro;
+        border-right: 1px solid gainsboro;
+    }
+
+    .main-container > .container > .banner {
+        display: flex;
+        justify-content: space-between;
+        width: 467px;
+        border-left: 1px solid gainsboro;
+        border-right: 1px solid gainsboro;
+    } 
+
+    .main-container > .container > .banner > h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1000px) and (min-height: 500px) {
+
+    .main-container > .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -975px;
+        left: 0;
+        height: 502px;
+        max-height: 502px;
+    }
+    
+    .main-container > .container > .banner > .profileImage {
+        display: none
+    }
+
+    .main-container > .container > .qep {
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid gainsboro;
+        border-left: 1px solid gainsboro;
+        border-right: 1px solid gainsboro;
+        height: 120px;
+    }
+
+    .main-container > .container > .qep > .left {
+        display: flex;
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 12px;
+        margin-top: 6px;
+    }
+
+    .main-container > .container > .qep > .right {
+        display: flex;
+        flex-direction: column;
+        padding-right: 12px;
+        margin-top: 15px;
+        opacity: calc(0.5);
+    }
+
+    .main-container > .container > .qep > .left > img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .main-container > .container > .qep > .right > .top {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .main-container > .container > .qep > .right > .top > span {
+        font-size: 20px;
+    }
+
+    .main-container > .container > .qep > .right > .bottom {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-container > .container > .qep > .right > .bottom > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 12px;
+        margin-left: -5px;
+        width: 180px;
+    }
+
+    .main-container > .container > .qep > .right > .bottom > ul > li {
+        padding-left: 8px;
+        padding-right: 8px;
+        color:rgb(29, 155, 240);
+    }
+
+    .main-container > .container > .qep > .right > .bottom > ul > li > i {
+        font-size: 20px;
+    }
+
+    .main-container > .container > .qep > .right > .bottom > span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(29, 155, 240);
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        width: 90px;
+        border-radius: 16px;
+        margin-left: 140px;
+    }
+    
+    .main-container > .right-bar {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -770px;
+        right: 0px;
+        width: 350px;
+        max-width: 380px;
+        margin-right: 5px;
+        margin-left: 20px;
+    }
+
+    .main-container > .right-bar > .search {
+        background: rgb(246, 246, 246);
+        width: 350px;
+        margin-top: 12px;
+        margin-bottom: 3px;
+        border-radius: 16px;
+    }
+
+    .main-container > .right-bar > .search > i {
+        font-size: 20px;
+        margin-left: 12px;
+        padding: 12px;
+    }
+
+    .main-container > .right-bar > .search > span {
+        font-size: 15px;
+        margin-left: 8px;
+    }
+
+    .main-container > .right-bar > .wgo {
+        margin-top: 12px;
+    }
+
+    .main-container > .right-bar > .wgo, .follow {
+        display: flex;
+        width: 348px;
+        margin-bottom: 16px;
+        background: rgb(246, 246, 246);
+        border-radius: 16px;
+    }
+
+    .main-container > .right-bar > .wgo > ul > li {
+        display: flex;
+        flex-direction: row;
+        width: 316px;
+        padding: 12px 16px;
+        padding-top: 12px;
+    }
+
+    .main-container > .right-bar > .follow > ul > li {
+        display: flex;
+        flex-direction: row;
+        width: 316px;
+        padding: 12px 16px;
+        padding-top: 12px;
+    }
+
+    .main-container > .right-bar > .wgo > ul > .tittle > h2 {
+        height: 24px;
+        font-size: 18px;
+    }
+
+    .main-container > .right-bar > .follow > ul > .tittle > h2 {
+        height: 24px;
+        font-size: 18px;
+    }
+
+    .main-container > .right-bar > .wgo > ul > li > .left {
+        width: 236px;
+        max-width: 248px;
+        margin-right: 12px;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > .left-ng {
+        width: 48px;
+        margin-right: 12px;
+        background-image: url(/assets/img/ng.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > .left-mrbeast {
+        width: 48px;
+        margin-right: 12px;
+        background-image: url(/assets/img/mrbeast.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > .left-chino {
+        width: 48px;
+        margin-right: 12px;
+        background-image: url(/assets/img/chino.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .main-container > .right-bar > .wgo > ul > li >.left > .category {
+        font-size: 12px;
+    }
+
+    .main-container > .right-bar > .wgo > ul > li >.left > p {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 4px;
+        margin-bottom: 2px;
+    }
+
+    .main-container > .right-bar > .wgo > ul > li > .left > span {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .main-container > .right-bar > .wgo > ul > li > .right {
+        width: 68px;
+        max-width: 68px;
+    }
+
+    .main-container > .right-bar > .wgo > ul > li > .right-bts {
+        width: 68px;
+        height: 68px;
+        background-image: url(/assets/img/bts.png);
+        background-size: cover;
+        background-position: center;        
+        border-radius: 16px;
+    }
+
+    .main-container > .right-bar > .wgo > ul > li > .right-oto {
+        width: 68px;
+        height: 68px;
+        background-image: url(/assets/img/oto.jpg);
+        background-size: cover;
+        background-position: center;        
+        border-radius: 16px;
+    }
+
+    .main-container > .right-bar > .wgo > ul > li > .ellipsis > i {
+        font-size: 16;
+        margin-left: 53px;
+    }
+
+    .main-container > .right-bar > .wgo > ul > li > a {
+        text-decoration: none;
+        color: rgb(29, 155, 240);
+        font-size: 14px;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > .center {
+        width: 161px;
+        height: 48px;
+        margin-right: 12px;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > .center > p {
+        display: flex;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 4px;
+        margin-bottom: 2px;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > .center > p > img {
+        width: 18px;
+        height: 18px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > .center > p > i {
+        font-size: 20px;
+        color:dodgerblue;
+        margin-left: 4px;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > .center > span {
+        font-size: 14px;
+        color: slategrey;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 76px;
+        height: 32px;
+        margin-left: 12px;
+        max-width: 88px;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > .right > button {
+        background-color: rgb(15, 20, 25);
+        width: 100%;
+        height: 100%;
+        color: rgb(235, 232, 232);
+        font-weight: bold;
+        border-radius: 15px;
+    }
+
+    .main-container > .right-bar > .follow > ul > li > a {
+        text-decoration: none;
+        color: rgb(29, 155, 240);
+        font-size: 14px;
+    }
+
+    .main-container > .right-bar > .footer > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    .main-container > .right-bar > .footer > ul > li > a {
+        font-size: 12px;
+        line-height: 16px;
+        color: rgb(83, 100, 113);
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding-right: 12px;
+    }
+
+    .main-container > .right-bar > .footer > ul > .ellipsis > a > i {
+        margin-left: 3px;
+    }
+
+}
